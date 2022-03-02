@@ -28,7 +28,7 @@ export default function ModeSelection(){
        
     }
 
-    
+    let bert = 'https://d827xgdhgqbnd.cloudfront.net/wp-content/uploads/2019/04/09110726/Bert-Head.png' 
 
     return(
         <>
@@ -36,7 +36,7 @@ export default function ModeSelection(){
        
         <div className="flex justify-center ">
             
-        <img className="flex justify-center object-cover h-28 w-30 " src={userInfo.avatar} alt="Logo" />
+        <img className="flex justify-center object-cover h-28 w-30 " src={bert} alt="Logo" />
         </div>
        
         <h1 className="text-center  text-2xl mt-10">Welcome K.{userInfo.fname} {userInfo.lname} {userInfo.username}</h1>

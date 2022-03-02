@@ -8,6 +8,7 @@ import AuthState from './Context/AuthContext/AuthState'
 import Record from "./Components/Record/Record";
 import Peer from './Peer/Peer'
 import StreamingList from "./Components/Streaming/StreamingList";
+import RecorderPlay from './Components/Record/RecorderPlay'
 
 var Socket_ID = ''
 setInterval(()=>
@@ -25,22 +26,25 @@ export default function App() {
   const [loginState, loginDispatch] = useReducer(reducer, true)
   
   return (
+
     <AuthState>
     <Router>
       <Navbar/>
       <logginContext.Provider value ={{loginState, loginDispatch}} >
       <Routes>  
           <Route index element={ <Home /> } />
-          <Route exact path="/docs" element={ <Docs />} />
+          <Route exact path="/docss" element={ <Docs />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/main" element={<DisplayState />}/>
           <Route exact path="/" element={<Docs />} />
           <Route exact path= "/record" element={<Record />}/>
           <Route exact path="/stream" element={<StreamingList/>} />
+          <Route exact path="/record/views" element={<RecorderPlay/>}/>
       </Routes>
       </logginContext.Provider>
     </Router>
     </AuthState>
+
   );
 }
 

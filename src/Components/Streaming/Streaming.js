@@ -17,3 +17,5 @@ export default function Streaming(value){
    
     )
 }
+
+//https://www.scichart.com/documentation/js/current/Glow%20and%20DropShadow%20Shader%20Effects.html
