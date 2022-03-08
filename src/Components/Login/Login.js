@@ -6,25 +6,15 @@ import {login,useAuth,AuthState,loadUser} from '../../Context/AuthContext/AuthSt
 export default function Login(){
     const [authState, authDispatch] = useAuth();
     let {accessToken,user} = authState
+
     const [userName, setUserName] = useState('walter.beau@mecallapi.com');
     const [passWord, setpassWord] = useState('mecallapi');
- 
-  
     const submitLogin = async ()=>{
-     
-     
       console.log(authState, 'authState', 'token', accessToken , 'user' , user)
       login(authDispatch,  {username : userName , password : passWord})
-      
-     
- 
     }
-
-   
     return(
-        
-      
-        <div className="flex items-center justify-center my-auto ">
+        <div className="flex items-center justify-center my-auto s ">
         <div className="bg-white md:w-1/3  shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4 flex flex-col">
             <p className="text-center text-xl font-semibold"> โปรดเข้าสู่ระบบเพื่อเข้าใช้งาน </p>
             <div className="mb-2">

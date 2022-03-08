@@ -27,11 +27,10 @@ export default function ModeSelection(){
         navigate('/stream')
        
     }
-
-    let bert = 'https://d827xgdhgqbnd.cloudfront.net/wp-content/uploads/2019/04/09110726/Bert-Head.png' 
+    let bert = 'https://www.perfectpedigreethailand.com/uploads/5/2/5/4/52548193/golden-retriever-p_1_orig.jpg' 
 
     return(
-        <>
+        <div className="bg-white">
          <button className='bg-red-500 hover:bg-red-200 hover:cursor-pointer  shadow-lg rounded-lg p-1'onClick={signOut}> Logout </button>
        
         <div className="flex justify-center ">
@@ -61,6 +60,6 @@ export default function ModeSelection(){
         </div>
         </div>
         </div>
-        </>
+        </div>
     )
 }
