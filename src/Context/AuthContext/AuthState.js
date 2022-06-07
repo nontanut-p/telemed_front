@@ -9,7 +9,6 @@ export const useAuth = ()=>{
     return [state,dispatch]
 }
 
-
 export const loadUser = async (dispatch) => {
     try{
         const res = await axios.get('https://www.mecallapi.com/api/users')
