@@ -12,10 +12,10 @@ export default function Navbar({ fixed }) {
 					<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start '>
 					
 						<Link
-							className='text-3xl font-bold leading-relaxed inline-block mr-4 py-0 whitespace-nowrap uppercase text-white hover: transform hover:-translate-y-1 hover:scale-110'
+							className='text-3xl font-bold leading-relaxed inline-block mr-4 py-0 whitespace-nowrap  text-white hover: transform hover:-translate-y-1 hover:scale-110'
 							to='/'
 						>
-							<div><i className='fas fa-robot'> Telemed </i> </div>
+							<div><i className='fas fa-robot'> MTEC vitalsign monitor </i> </div>
 						</Link>
 						<button
 							className='text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none'
