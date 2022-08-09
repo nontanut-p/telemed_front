@@ -9,7 +9,7 @@ export default function ModeSelection(){
     useEffect(()=>{
         setUserInfo(JSON.parse(localStorage.getItem('user')))
     
-        console.log(userInfo)
+        console.log(userInfo, 'test')
     },[])
     
     const signOut = ()=>{

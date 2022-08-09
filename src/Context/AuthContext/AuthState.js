@@ -58,9 +58,10 @@ export const login = async (dispatch, formData) => {
         type: 'Login',
         payload: dataPayload
       });
+
       localStorage.setItem("token", res.data.accessToken);
       localStorage.setItem("user", JSON.stringify(res.data.user))
-      window.location.href = "/main";
+    //   window.location.href = "/main";
 
     } catch (err) {
       console.log(err)
